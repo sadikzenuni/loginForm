@@ -1,0 +1,19 @@
+.login {
+  margin-top: 20%;
+
+  .card {
+    max-width: 500px;
+    margin: auto;
+
+    .login-btn {
+      width: 100%;
+      margin: 1rem auto;
+      text-align: center;
+
+      button {
+        width: 100%;
+        max-width: 150px;
+      }
+    }
+  }
+}

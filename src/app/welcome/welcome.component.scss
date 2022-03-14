@@ -1,0 +1,11 @@
+.home-body {
+  width: 100%;
+  text-align: center;
+
+  h1 {
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

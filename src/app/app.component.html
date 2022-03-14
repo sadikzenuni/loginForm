@@ -1,0 +1,26 @@
+<nav class="navbar navbar-light bg-light p-0 m-0">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img src="./assets/logo/ucx-logo.png" alt="logo" height="50">
+    </a>
+
+    <div class="d-flex align-items-center" *ngIf="!currentUser">
+      <button class="btn btn-outline-primary"  routerLink="/login">Login</button>
+    </div>
+
+    <div class="d-flex align-items-center" *ngIf="currentUser">
+      <div class="avatar">
+        <span [ngStyle]="{'background-color': bgRandomColor}">{{userInfo?.first_name | slice: 0:1}}</span>
+        <h5>
+        Hi, {{userInfo?.first_name}}
+        </h5>
+      </div>
+
+      <button class="btn btn-outline-primary" (click)="logout()">Logout</button>
+    </div>
+  </div>
+
+</nav>
+
+<router-outlet></router-outlet>
+
